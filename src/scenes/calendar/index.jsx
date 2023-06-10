@@ -96,7 +96,7 @@ const Calendar = () => {
             headerToolbar={{
               left: "prev,next today",
               center: "title",
-              right: "dayGridMonth, timerGridWeek, timerGridDay, listMonth"
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
             }}
             initialView="dayGridMonth"
             editable={true}
@@ -105,7 +105,7 @@ const Calendar = () => {
             dayMaxEvents={true}
             select={handleDateClick}
             eventClick={handleClickEvent}
-            eventsSet={events => setCurrentEvents(events)}
+            eventsSet={(events) => setCurrentEvents(events)}
             initialEvents={[
               {
                 id: "12315",
